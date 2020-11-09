@@ -7,33 +7,92 @@
     box-sizing: border-box;
 }
 
-header {
-    font-family: Arial, Helvetica, sans-serif;
-    background: $background-img center center/cover;
-    height: 75vh;
-    color: #fff;
+body {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    background: #fff;
 }
 
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    }
+
+// navigation bar with logo
 #main-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
-    background: #f4f4f4;
-    opacity: 0.8;
-
-    .logo {
+    padding-top: 1rem;
+ 
+    
+    #logo {
         font-size: 2rem;
         line-height: 1.5;
-        color: $main-color;
+        color: $dark-color;
+        padding:0 1rem 0 1rem;
+        // background-color: $light-color;
+        // border-radius: 10px;
+        transition: color 0.7s;
+
+        &:hover {
+            color: $highlight-color;
+        }
+
+        i {
+            color: $highlight-color;
+        }
     }
 
     ul {
         display: flex;
-        list-style-type: none;
-            }
+    }
     
     li {
-        list-style: none;
+        padding: 1rem 1.5rem;
+    }
+
+    a {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: bolder;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s, color 0.5s;
+
+        &:hover {
+            border-color: $highlight-color;
+            color: #fff;
+        }
+
+        &.current {
+            border-color: $shock-color;
+        }
+    }
+}
+
+// main showcase page
+#header {
+    &-home {    
+        background: $background-img no-repeat center center/cover;
+        height: 80vh;
+        color: #fff;
+
+        .header-content {
+            text-align: center;
+            padding-top: 15%;
+
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
     }
 }

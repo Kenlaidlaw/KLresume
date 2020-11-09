@@ -1,5 +1,46 @@
-.fancy-font {
-  font-family: "Pacifico", cursive;
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-main, .btn-highlight, .btn-dark {
+  display: inline-block;
+  padding: 0.4rem 1.5rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.btn-main {
+  color: #fff;
+  background-color: #6894b8;
+}
+
+.btn-highlight {
+  color: #333;
+  background-color: #ffcc10;
+}
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #353f44;
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: #ffcc10;
+  color: #ff0040;
 }
 
 * {
@@ -9,11 +50,23 @@
           box-sizing: border-box;
 }
 
-header {
-  font-family: Arial, Helvetica, sans-serif;
-  background: url(../img/showcase.jpg) center center/cover;
-  height: 75vh;
-  color: #fff;
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #353f44;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
 }
 
 #main-nav {
@@ -26,25 +79,67 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 70px;
-  background: #f4f4f4;
-  opacity: 0.8;
+  padding-top: 1rem;
 }
 
-#main-nav .logo {
+#main-nav #logo {
   font-size: 2rem;
   line-height: 1.5;
-  color: steelblue;
+  color: #353f44;
+  padding: 0 1rem 0 1rem;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
+}
+
+#main-nav #logo:hover {
+  color: #ffcc10;
+}
+
+#main-nav #logo i {
+  color: #ffcc10;
 }
 
 #main-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
 }
 
 #main-nav li {
-  list-style: none;
+  padding: 1rem 1.5rem;
+}
+
+#main-nav a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  -webkit-transition: border-color 0.5s, color 0.5s;
+  transition: border-color 0.5s, color 0.5s;
+}
+
+#main-nav a:hover {
+  border-color: #ffcc10;
+  color: #fff;
+}
+
+#main-nav a.current {
+  border-color: #ff0040;
+}
+
+#header-home {
+  background: url(../img/1345508810-medium.jpg) no-repeat center center/cover;
+  height: 80vh;
+  color: #fff;
+}
+
+#header-home .header-content {
+  text-align: center;
+  padding-top: 15%;
+}
+
+#header-home .header-content h1 {
+  font-size: 3.5rem;
 }
 /*# sourceMappingURL=main.css.map */
