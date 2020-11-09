@@ -5,33 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f09c3b6f37.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Ken Laidlaw - Resume</title>
 </head>
 
 <body>
-    <header>
+    <header class="header-home">
         <div class="container">
             <nav id="main-nav">
-                <h2 class="logo fancy-font">KL Resume</h2>
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html" class="current">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#contactme">Contact me</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div id="showcase">
-            <h1>I am Ken Laidlaw, Web developer, App developer, Freelancer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus eligendi nihil at! Exercitationem
-                incidunt cumque necessitatibus, odit distinctio explicabo accusantium, a corrupti reiciendis blanditiis
-                molestiae obcaecati totam inventore quia.</p>
-        </div>
+                <h2 id="logo" class="fancy-font">KL Resume</h2>
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#contactme">Contact me</a></li>
+                </ul>
 
+            </nav>
+            <div class="header-content">
+                <h1>I am Ken Laidlaw, <span class="txt-type" data-wait="3000"
+                        data-words='["Web designer", "App designer", "Programmer"]'></span></h1>
+                <p class="lead">
+                    I specialise in Web design, front and back end and applications design for your lifestyle
+                </p>
+                <a href="work.html" class="btn-light">View my work</a>
+            </div>
+        </div>
     </header>
+
+
+
+    <script src="js/typewriter.js"></script>
 </body>
 
 </html>
