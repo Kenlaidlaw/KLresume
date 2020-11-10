@@ -10,6 +10,19 @@
     margin-bottom: 2rem;
 }
 
+.lead-main {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+} 
+
+.fancy-texta {
+    font-family: $font-stack1;
+}
+.fancy-textb {
+    font-family: $font-stack2;
+}
+
 //buttons
 %btn-shared {
     display: inline-block;
@@ -46,4 +59,64 @@ a[class^='btn-']:hover,
 input[class^='btn-']:hover {
     background-color: $highlight-color;
     color: $shock-color;
+}
+
+// padding and margins
+.py-1 {
+    padding: 1rem 0;
+}
+.py-2 {
+    padding: 2rem 0;
+}
+.py-3 {
+    padding: 3rem 0;
+}
+.py-4 {
+    padding: 4rem 0;
+}
+.my-1 {
+    padding: 1rem 0;
+}
+.my-2 {
+    padding: 2rem 0;
+}
+.my-3 {
+    padding: 3rem 0;
+}
+.my-4 {
+    padding: 4rem 0;
+}
+
+.bottom-line {
+    height: 3px;
+    width: 6rem;
+    background: $shock-color;
+    display: block;
+    margin: 1rem auto 1rem auto;
+}
+
+.text-center {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+// Background classes
+
+.bg {
+    &-main {
+        background: $main-color;
+        color: set-text-color($main-color)
+    }
+    &-dark {
+        background: $dark-color;
+        color: set-text-color($dark-color)
+    }
+    &-light {
+        background: $light-color;
+        color: set-text-color($light-color)
+    }
+    &-highlight {
+        background: $highlight-color;
+        color: set-text-color($highlight-color)
+    }
 }

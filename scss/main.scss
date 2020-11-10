@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'utilities';
+@import 'item_grid';
 
 * {
     margin: 0;
@@ -11,6 +12,10 @@ body {
     font-family: 'Dosis', sans-serif;
     line-height: 1.6;
     background: #fff;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
 }
 
 a {
@@ -35,7 +40,7 @@ img {
  
     
     #logo {
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 1.5;
         color: $dark-color;
         padding:0 1rem 0 1rem;
@@ -83,7 +88,7 @@ img {
 #header {
     &-home {    
         background: $background-img no-repeat center center/cover;
-        height: 80vh;
+        height: 75vh;
         color: #fff;
 
         .header-content {
@@ -93,6 +98,123 @@ img {
             h1 {
                 font-size: 3.5rem;
             }
+
         }
+    }
+}
+
+// about section home a
+
+#home {
+    &-a {
+        background: $light-color;
+
+        .about-icons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+        }
+        .fas {
+            color: $highlight-color;
+            padding: 1rem 0;
+        }
+        .icon-a,
+        .icon-c {
+            background: $main-color;
+            border-radius: 10px;
+        }
+        .icon-b,
+        .icon-d {
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .btn-dark {
+            margin-top: 1.5rem;
+        }
+    }
+
+
+}
+
+// Contact Page
+
+#home {
+    &-c {
+        background: $dark-color;
+        color: #fff;
+
+        .btn-main {
+            width: 30%;
+        }
+
+        .text-fields {
+            display:grid;
+            grid-template-areas: 
+                'name email'
+                'subject phone'
+                'message message';
+            grid-gap: 1.2rem;
+            margin-bottom: 1.2rem;
+            padding: .5rem;
+           
+            // Grid areas
+            .name-input {
+                grid-area: name;
+            }
+            .subject-input {
+                grid-area: subject;
+            }
+            .email-input {
+                grid-area: email;
+            }
+            .phone-input {
+                grid-area: phone;
+            }
+            .message-input {
+                grid-area: message;
+                height: 100px;
+            }
+
+            .text-input {
+                padding: 0.5rem 1rem;
+            }
+
+        }
+    }
+}
+
+
+//Footer
+
+#main-footer {
+    background: $main-color;
+    color: $highlight-color;
+    height: 5rem;
+
+    .footer-content {
+       display: flex;
+       justify-content: space-between;
+       height: 5rem;
+       align-items: center;
+
+       .social .fab {
+           margin-right: 1rem;
+           border: 2px white solid;
+           border-radius: 50%;
+           height: 25px;
+           width: 25px;
+           line-height: 25px;
+           text-align: center;
+           justify-content: center;
+           justify-items: center;
+           padding-bottom: 1rem;        
+
+           &:hover {
+               background-color: $shock-color;
+               color: #fff;
+           }
+       }
+
     }
 }

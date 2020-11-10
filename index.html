@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f09c3b6f37.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -15,27 +16,136 @@
     <header id="header-home">
         <div class="container">
             <nav id="main-nav">
-                <h2 id="logo" class="main-logo"><i class="fas fa-project-diagram"></i> KL Resume</h2>
-                <ul>
+                <h2 id="logo" class="main-logo fancy-textb"><i class="fas fa-project-diagram"></i> Ken L</h2>
+                <ul class="fancy-textb">
                     <li><a href="index.html" class="current">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="#contactme">Contact me</a></li>
+                    <li><a href="#contactme">Contact</a></li>
                 </ul>
 
             </nav>
             <div class="header-content">
-                <h1>I am Ken Laidlaw, <span class="txt-type" data-wait="2000"
+                <h1>Ken Laidlaw, <span class="txt-type" data-wait="2000"
                         data-words='["Web designer", "App designer", "Programmer"]'></span></h1>
-                <p class="lead">
+                <p class="lead-main">
                     I specialise in front and back end Web design, programming and applications design
                 </p>
                 <a href="work.html" class="btn-main">View my work</a>
             </div>
         </div>
     </header>
+    <!-- home page section a -->
+    <section id="home-a" class="text-center py-2">
+        <div class="container">
+            <h2>About what I do!</h2>
+            <div class="bottom-line"></div>
+            <div class="about-icons">
+                <div class="icon-a">
+                    <i class="fas fa-globe fa-2x"></i>
+                    <h3>Full stack web</h3>
+                    <p class="lead">Design and implementation of websites from start to finish</p>
+                </div>
+                <div class="icon-b">
+                    <i class="fas fa-file-alt fa-2x"></i>
+                    <h3>Application Design</h3>
+                    <p class="lead">Bespoke apps to suit your business needs or lifestyle</p>
+                </div>
+                <div class="icon-c">
+                    <i class="fas fa-code fa-2x"></i>
+                    <h3>Freelance coding</h3>
+                    <p class="lead">Need full or partial code? I can help!</p>
+                </div>
+                <div class="icon-d">
+                    <i class="fas fa-user fa-2x"></i>
+                    <h3>To find out more about me</h3>
+                    <a href="about.html" class="btn-dark">Click here</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- homepage section b - portfolio -->
 
+    <section id="home-b" class="text-center py-2">
+        <div class="container">
+            <h2>My most recent portfolio pieces</h2>
+            <p class="lead">To see more of my work you can click below</p>
+            <a href="projects.html" class="btn-dark">Portfolio</a>
+            <div class="bottom-line"></div>
+            <div class="items">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="img/kjl.jpg" alt="">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">Web design</p>
+                            <h2 class="item-text-title">Alpha Eco - pipefitters</h2>
+                            <p>HTML, CSS and SASS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="img/showcase.jpg" alt="">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">Web Design</p>
+                            <h2 class="item-text-title"><a href="http://www.klapps.co.uk/" target="new">KLAPPS
+                                    projects</a></h2>
+                            <p>My own project site</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="img/kjl.jpg" alt="">
+                    </div>
+                    <div class="item-text">
+                        <div class="item-text-wrap">
+                            <p class="item-text-category">Web Design</p>
+                            <h2 class="item-text-title">Alexander Beach</h2>
+                            <p>A hotel site using HTML & CSS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- homepage section c - contacts -->
+    <section id="home-c" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">Here is how you can reach me</p>
+
+            <form action="">
+                <div class="text-fields">
+                    <input type="text" class="text-input name-input" placeholder="Name">
+                    <input type="text" class="text-input subject-input" placeholder="Subject">
+                    <input type="email" class="text-input email-input" placeholder="Emai Address">
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number">
+                    <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
+                </div>
+                <button type="submit" class="btn-main">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">
+            <p>Copyright &copy; 2020, All Rights Reserved</p>
+            <div class="social">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/typewriter.js"></script>
 </body>
