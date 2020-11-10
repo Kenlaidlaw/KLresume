@@ -285,7 +285,7 @@ img {
 #main-nav #logo {
   font-size: 2.5rem;
   line-height: 1.5;
-  color: #353f44;
+  color: #6894b8;
   padding: 0 1rem 0 1rem;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
@@ -317,6 +317,7 @@ img {
   padding-bottom: 0.5rem;
   -webkit-transition: border-color 0.5s, color 0.5s;
   transition: border-color 0.5s, color 0.5s;
+  color: #e8f1f5;
 }
 
 #main-nav a:hover {
@@ -341,6 +342,12 @@ img {
 
 #header-home .header-content h1 {
   font-size: 3.5rem;
+}
+
+#header-inner {
+  background: url(../img/1345508810-medium.jpg) no-repeat center center/cover;
+  height: 10vh;
+  color: #fff;
 }
 
 #home-a {
