@@ -348,6 +348,7 @@ img {
   background: url(../img/1345508810-medium.jpg) no-repeat center center/cover;
   height: 10vh;
   color: #fff;
+  border-bottom: 5px solid #ffcc10;
 }
 
 #home-a {
@@ -435,6 +436,15 @@ img {
 
 #home-c .text-fields .text-input {
   padding: 0.5rem 1rem;
+}
+
+#work-a {
+  background: #e8f1f5;
+  color: #353f44;
+}
+
+#work-a .btn-dark {
+  margin-bottom: 1rem;
 }
 
 #main-footer {

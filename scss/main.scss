@@ -109,6 +109,7 @@ img {
         background: $background-img no-repeat center center/cover;
         height: 10vh;
         color: #fff;
+        border-bottom: 5px solid $highlight-color;
     }
 }
 
@@ -190,6 +191,17 @@ img {
             }
 
         }
+    }
+}
+
+// portfolio page
+
+#work-a {
+    background: $light-color;
+    color: $dark-color;
+
+    .btn-dark {
+        margin-bottom: 1rem;
     }
 }
 
