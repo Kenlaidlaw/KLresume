@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'utilities';
 @import 'item_grid';
+@import 'mobile';
 
 * {
     margin: 0;
@@ -107,7 +108,7 @@ img {
 
     &-inner {
         background: $background-img no-repeat center center/cover;
-        height: 10vh;
+        height: 30vh;
         color: #fff;
         border-bottom: 5px solid $highlight-color;
     }

@@ -58,8 +58,7 @@ button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
     background-color: $highlight-color;
-    color: $shock-color;
-}
+    }
 
 // padding and margins
 .py-1 {
@@ -90,7 +89,7 @@ input[class^='btn-']:hover {
 .bottom-line {
     height: 3px;
     width: 6rem;
-    background: $shock-color;
+    background: $highlight-color;
     display: block;
     margin: 1rem auto 1rem auto;
 }
