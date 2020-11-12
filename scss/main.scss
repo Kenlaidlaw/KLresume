@@ -147,6 +147,67 @@ img {
 
 }
 
+// about page
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1rem;
+
+    .bio-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .bio {
+        border-left: 5px $highlight-color solid;
+    }
+
+    h3 {
+        padding: 1rem 0;
+    }
+
+    p {
+        padding: 0 1rem 1rem 1rem;
+        font-weight: 800;
+    }
+}
+
+.about-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+    .logos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: $main-color;
+        border-left: 5px solid $highlight-color;
+
+        img {
+            height: 100px;
+            width: 100px;
+            padding: 1rem;
+            align-items: center;
+            text-align: center;
+            justify-self: center;
+        }
+    }
+
+    .skills {
+        background: $light-color;
+        font-weight: 800;
+        padding: 1rem 0;
+        border-left: 5px solid $highlight-color;
+    }
+
+    .certs {
+        background: $main-color;
+        font-weight: 800;
+        padding: 1rem 0;
+        border-left: 5px solid $highlight-color;
+    }
+}
+
 // Contact Page
 
 #home {
